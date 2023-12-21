@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 15 22:05:04 2021
+# Process ID: 8376
+# Current directory: C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1bands
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8832 C:\Users\Andy\OneDrive\Desktop\Vivado Workspace\lab1bands\lab1bands.xpr
+# Log file: C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1bands/vivado.log
+# Journal file: C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1bands\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1bands/lab1bands.xpr}
+update_compile_order -fileset sources_1

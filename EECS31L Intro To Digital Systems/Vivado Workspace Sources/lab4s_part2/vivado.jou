@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Sat Jun 12 04:31:48 2021
+# Process ID: 24356
+# Current directory: D:/School/EECS31L/Vivado Workspace Sources/lab4s_part2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24056 D:\School\EECS31L\Vivado Workspace Sources\lab4s_part2\lab4s_part2.xpr
+# Log file: D:/School/EECS31L/Vivado Workspace Sources/lab4s_part2/vivado.log
+# Journal file: D:/School/EECS31L/Vivado Workspace Sources/lab4s_part2\vivado.jou
+#-----------------------------------------------------------
+start_gopeopen_project {D:/School/EECS31L/Vivado Workspace Sources/lab4s_part2/lab4s_part2.xpupdate_compile_order -fileset sources_1

@@ -1,0 +1,5 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andy/OneDrive/Desktop/xor_gate_example/xor_gate_example.srcs/sources_1/imports/XOR Gate Example - Solution/XOR_gate_s_solution.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'NOR2'
+INFO: [VRFC 10-3107] analyzing entity 'XOR_gate_struct'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andy/OneDrive/Desktop/xor_gate_example/xor_gate_example.srcs/sources_1/imports/XOR Gate Example - Solution/XOR_gate_s_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Testbench'

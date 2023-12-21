@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Sat Jun 12 04:31:48 2021
+# Process ID: 24356
+# Current directory: D:/School/EECS31L/Vivado Workspace Sources/lab4s_part2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24056 D:\School\EECS31L\Vivado Workspace Sources\lab4s_part2\lab4s_part2.xpr
+# Log file: D:/School/EECS31L/Vivado Workspace Sources/lab4s_part2/vivado.log
+# Journal file: D:/School/EECS31L/Vivado Workspace Sources/lab4s_part2\vivado.jou
+#-----------------------------------------------------------
+start_gopeopen_project {D:/School/EECS31L/Vivado Workspace Sources/lab4s_part2/lab4s_part2.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab4s_part2' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/School/EECS31L/Vivado Workspace Sources/lab4s_part2/lab4s_part2.gen/sources_1', nor could it be found using path 'C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab4s_part2/lab4s_part2.gen/sources_1'.
+Scanning sources...
+Finished scanning sourcINFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/School/EECS31L/Vivado/2020.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1328.102 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 12 04:32:28 2021...
+ace Sources/lab4s_part2/vivado_pid24356.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 12 04:32:19 2021...

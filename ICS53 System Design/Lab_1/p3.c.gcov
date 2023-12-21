@@ -1,0 +1,170 @@
+        -:    0:Source:p3.c
+        -:    0:Graph:p3.gcno
+        -:    0:Data:p3.gcda
+        -:    0:Runs:1
+        -:    1:#include <stdio.h>
+        -:    2:#include <stdlib.h>
+        -:    3:#include <string.h>
+        -:    4:#include <stdbool.h>
+        -:    5:
+        -:    6:// gcc p3.c -o p3
+        -:    7:// ./p3
+        -:    8:
+        1:    9:bool check(long int calorie, long int time, long int table[], long int total, int func) 
+        -:   10:  {
+        -:   11:    // func is 0 for add because first time record is appear, 1 for replace because it should exists
+        -:   12:
+        -:   13:    // checks if time provides is in [0, 23] inclusive
+        1:   14:    if ((time < 0) || (23 < time)) {
+    #####:   15:      printf("Error: %li not valid time.\n", time);
+    #####:   16:      return false;
+        -:   17:    }
+        -:   18:
+        -:   19:    // if func is 1, it is replacing so check if record exists
+        1:   20:    if (func == 1){
+    #####:   21:      if (table[time] == -1) {
+    #####:   22:      printf("Error: Meal does not exist in the record.\n");
+    #####:   23:      return false;
+        -:   24:      }
+    #####:   25:      total -= table[time];
+        -:   26:    }
+        -:   27:
+        -:   28:    // if func is 0, it is adding so check if record exists
+        1:   29:    if (func == 0){
+        1:   30:      if (table[time] != -1) {
+    #####:   31:      printf("Error: Meal does already exist in the record.\n");
+    #####:   32:      return false;
+        -:   33:      }
+        -:   34:    }
+        -:   35:
+        -:   36:    // checks if provided calorie for one hour or total calorie will exceeds limit of 2500
+        1:   37:    if ((2500 < calorie) || (2500 < (calorie + total))) {
+    #####:   38:      printf("Error: Caloric intake exceeds the 2500 calories limit.\n");
+    #####:   39:      return false;
+        -:   40:    }
+        -:   41:
+        -:   42:    // checks if provided calorie for one hour or total calorie will exceeds limit of 2500
+        1:   43:    if (calorie < 1) {
+    #####:   44:      printf("Error: Caloric entered was 0 or negative.\n");
+    #####:   45:      return false;
+        -:   46:    }
+        -:   47:
+        -:   48:    // checks if any calories was intaked within the 2 hours previous
+        3:   49:    for (int i = 1; i < 3; i++){
+        2:   50:      if (-1 < time - i) {
+        2:   51:        if (table[time-i] > -1) {
+    #####:   52:          printf("Error: Cannot have multiple meals in less than 3 hours.\n");
+    #####:   53:          return false;
+        -:   54:        }
+        -:   55:      }
+        -:   56:    }
+        -:   57:
+        -:   58:    // checks if any calories was intaked within the 2 hours after
+        3:   59:    for (int i = 1; i < 3; i++){
+        2:   60:      if (24 > time + i) {
+        2:   61:        if (table[time+i] > -1) {
+    #####:   62:          printf("Error: Cannot have multiple meals in less than 3 hours.\n");
+    #####:   63:          return false;
+        -:   64:        }
+        -:   65:      }
+        -:   66:    }
+        -:   67:
+        1:   68:    return true;
+        -:   69:  }
+        -:   70:
+        -:   71:
+        1:   72:int main(int argc, char const *argv[])
+        -:   73:  {
+        -:   74:    long int cal_hours[24]; // table to store calories per hour
+       25:   75:    for (int i = 0; i < 24; i++)
+        -:   76:    {
+       24:   77:      cal_hours[i] = -1;
+        -:   78:    }
+        -:   79:
+        1:   80:    long int total = 0; // total calories
+        1:   81:    long int calorie = 0; // calorie in input
+        1:   82:    long int time = 0; // time in input
+        1:   83:    int function = -1; // function for checking, add = 0, replace = 1
+        -:   84:
+        -:   85:    char input[1048]; // instantiate input string
+        -:   86:
+        -:   87:    // get input, strip ending newline from terminal and then get first token of input while spliting at spaces
+        -:   88:    //printf("Please enter a string\n");
+        1:   89:    printf("$ ");
+        1:   90:    fgets(input, 1048, stdin);
+        -:   91:    char *token;
+        -:   92:    //printf("Command:%s", input);
+        1:   93:    token = strtok(input, "\n");
+        1:   94:    token = strtok(token, " ");
+        -:   95:
+        -:   96:    // while loop runs until "quit" is the input
+        2:   97:    while (strcmp(token, "quit")!=0) 
+        -:   98:      {
+        -:   99:        // function variable to indicate if input is valid
+        1:  100:        function = -1;
+        -:  101:
+        -:  102:        // if printplan, print calories per hour in sequential order
+        1:  103:        if (strcmp(token, "printplan")==0) 
+        -:  104:          {
+    #####:  105:          for (int i = 0; i < 24; i++) 
+        -:  106:            {
+    #####:  107:            if (cal_hours[i] > -1) 
+        -:  108:              {
+    #####:  109:              printf("%i %li\n", i, cal_hours[i]);
+        -:  110:              }
+        -:  111:            }
+        -:  112:          }
+        -:  113:
+        -:  114:        else 
+        -:  115:          {
+        -:  116:          // function = 0, so check knows
+        1:  117:          if (strcmp(token, "add")==0) 
+        -:  118:            {
+        1:  119:            function = 0;
+        -:  120:            }
+        -:  121:        
+        -:  122:          // function = 1, so check knows
+        1:  123:          if (strcmp(token, "replace")==0) 
+        -:  124:            {
+    #####:  125:            function = 1;
+        -:  126:            }
+        -:  127:          
+        -:  128:          // if function = -1, it was not printplan, add, replace, or quit
+        1:  129:          if (function == -1) 
+        -:  130:            {
+    #####:  131:            printf("Invalid command\n");
+        -:  132:            }
+        -:  133:          
+        -:  134:          else 
+        -:  135:            {
+        -:  136:            // get calorie and time from input
+        1:  137:            token = strtok(NULL, " ");
+        1:  138:            calorie = strtol(token, NULL, 10);
+        1:  139:            token = strtok(NULL, " ");
+        1:  140:            time = strtol(token, NULL, 10);
+        -:  141:
+        -:  142:            // checks if request is valid
+        1:  143:            if (check(calorie, time, cal_hours, total, function)) 
+        -:  144:              {
+        -:  145:              // for replace, remove old amount of calories from total
+        1:  146:              if (function == 1) 
+        -:  147:                {
+    #####:  148:                total -= cal_hours[time];
+        -:  149:                }
+        -:  150:              // add calorie into table for hour, add to total
+        1:  151:              cal_hours[time] = calorie;
+        1:  152:              total += calorie;
+        -:  153:              }
+        -:  154:            }
+        -:  155:          }
+        -:  156:
+        -:  157:      // get input, strip ending newline from terminal and then get first token of input while spliting at spaces
+        1:  158:      printf("$ ");
+        1:  159:      fgets(input, 1048, stdin);
+        -:  160:      //printf("Command:%s", input);
+        1:  161:      token = strtok(input, "\n");
+        1:  162:      token = strtok(token, " ");
+        -:  163:      }
+        -:  164:
+        1:  165:    return 0;
+        -:  166:  }

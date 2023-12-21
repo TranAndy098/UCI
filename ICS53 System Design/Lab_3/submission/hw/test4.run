@@ -1,0 +1,38 @@
+LRU
+write 80 80
+showmain 0
+read 6
+write 34 34
+read 35
+write 82 82
+showmain 0
+showptable
+write 15 15
+write 8 8
+write 7 7
+showmain 1
+showptable
+read 70
+write 15 50
+showptable
+showmain 3
+read 60
+write 46 46
+write 90 90
+write 100 100
+read 15
+showptable
+showmain 3
+read 100
+read 82
+read 52
+read 46
+read 15
+showptable
+showmain 0
+showmain 1
+showmain 2
+write 50 500
+showmain 2
+showmain 3
+quit

@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lab4s_part1_v2.srcs/sources_1/imports/Desktop/lab4s_part1.vhd" \
+"../../../../lab4s_part1_v2.srcs/sources_1/imports/Desktop/lab4s_part1_tb.vhd" \
+
+# Do not sort compile order
+nosort

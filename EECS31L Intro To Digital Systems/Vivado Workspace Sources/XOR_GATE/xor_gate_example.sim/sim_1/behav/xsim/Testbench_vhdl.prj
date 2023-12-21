@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../xor_gate_example.srcs/sources_1/imports/XOR Gate Example - Solution/XOR_gate_b_solution.vhd" \
+"../../../../xor_gate_example.srcs/sources_1/imports/XOR Gate Example - Solution/XOR_gate_s_solution.vhd" \
+"../../../../xor_gate_example.srcs/sources_1/imports/XOR Gate Example - Solution/XOR_gate_s_tb.vhd" \
+
+# Do not sort compile order
+nosort

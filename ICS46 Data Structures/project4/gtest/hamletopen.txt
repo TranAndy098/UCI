@@ -1,0 +1,116 @@
+Scene 1. Elsinore. A platform before the castle.
+
+FRANCISCO at his post. Enter to him BERNARDO
+
+
+Bernardo
+    Who's there?!
+
+Francisco
+    Nay, answer me: stand, and unfold yourself.
+
+Bernardo
+    Long live the king!
+
+Francisco
+    Bernardo?
+
+Bernardo
+    He.
+
+Francisco
+    You come most carefully upon your hour.
+
+Bernardo
+    'Tis now struck twelve; get thee to bed, Francisco.
+
+Francisco
+    For this relief much thanks: 'tis bitter cold,
+    And I am sick at heart.
+
+Bernardo
+    Have you had quiet guard?
+
+Francisco
+    Not a mouse stirring.
+
+Bernardo
+    Well, good night.
+    If you do meet Horatio and Marcellus,
+    The rivals of my watch, bid them make haste.
+
+Francisco
+    I think I hear them. Stand, ho! Who's there?
+
+Enter HORATIO and MARCELLUS
+
+
+Horatio
+    Friends to this ground.
+
+Marcellus
+    And liegemen to the Dane.
+
+Francisco
+    Give you good night.
+
+Marcellus
+    O, farewell, honest soldier:
+    Who hath relieved you?
+
+Francisco
+    Bernardo has my place.
+    Give you good night.
+
+Exit
+
+
+Marcellus
+    Holla! Bernardo!
+
+Bernardo
+    Say,
+    What, is Horatio there?
+
+Horatio
+    A piece of him.
+
+Bernardo
+    Welcome, Horatio: welcome, good Marcellus.
+
+Marcellus
+    What, has this thing appear'd again to-night?
+
+Bernardo
+    I have seen nothing.
+
+Marcellus
+    Horatio says 'tis but our fantasy,
+    And will not let belief take hold of him
+    Touching this dreaded sight, twice seen of us:
+    Therefore I have entreated him along
+    With us to watch the minutes of this night;
+    That if again this apparition come,
+    He may approve our eyes and speak to it.
+
+Horatio
+    Tush, tush, 'twill not appear.
+
+Bernardo
+    Sit down awhile;
+    And let us once again assail your ears,
+    That are so fortified against our story
+    What we have two nights seen.
+
+Horatio
+    Well, sit we down,
+    And let us hear Bernardo speak of this.
+
+Bernardo
+    Last night of all,
+    When yond same star that's westward from the pole
+    Had made his course to illume that part of heaven
+    Where now it burns, Marcellus and myself,
+    The bell then beating one,--
+
+Enter Ghost 

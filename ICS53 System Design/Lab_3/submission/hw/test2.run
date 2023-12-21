@@ -1,0 +1,29 @@
+FIFO
+write 90 90
+write 73 73
+read 72
+showptable
+read 73
+showmain 1
+showmain 2
+read 180
+write 180 180
+showmain 0
+write 127 127
+write 50 50
+showptable
+read 127
+showmain 2
+write 0 0
+write 8 8
+read 16
+write 24 24
+showmain 0
+showmain 1
+showmain 2
+showmain 3
+showptable
+read 32
+showmain 0
+showptable
+quit

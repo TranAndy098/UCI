@@ -1,0 +1,52 @@
+in
+cr 1
+cr 1
+to
+rq 3 3
+cr 2
+cr 1
+cr 2
+to
+rq 3 2
+to
+cr 2
+cr 1
+rq 3 1
+rq 3 2
+to
+to
+cr 1
+to
+to
+rl 3 3
+to
+de 3
+de 2
+de 1
+de 0
+
+in
+cr 1
+cr 1
+to
+rq 3 3
+cr 2
+cr 1
+cr 2
+to
+rq 3 2
+to
+cr 2
+cr 1
+rq 3 1
+rq 3 2
+to
+to
+cr 1
+to
+to
+rl 3 3
+to
+de 3
+de 2
+de 1

@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/EECS31L/Vivado Workspace Sources/lab4s_part2/lab4s_part2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/School/EECS31L/Vivado Workspace Sources/lab4s_part2/lab4s_part2.srcs/sources_1/imports/Desktop/lab4s_part2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RegFile'
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [VRFC 10-3107] analyzing entity 'Shifter'
+INFO: [VRFC 10-3107] analyzing entity 'Selector'
+INFO: [VRFC 10-3107] analyzing entity 'Reg'
+INFO: [VRFC 10-3107] analyzing entity 'ThreeStateBuff'
+INFO: [VRFC 10-3107] analyzing entity 'Controller'
+INFO: [VRFC 10-3107] analyzing entity 'Locator_struct'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/School/EECS31L/Vivado Workspace Sources/lab4s_part2/lab4s_part2.srcs/sources_1/imports/Desktop/lab4s_part2_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab4s_tb'

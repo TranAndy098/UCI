@@ -1,0 +1,7 @@
+Vivado Simulator v2020.3.0
+Time resolution is 1 ps
+ERROR: Index 2 out of bound 1 downto 0
+Time: 0 ps  Iteration: 0  Process: /lab3s_tb/uut/Add2_2/line__17
+  File: C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/Lab_3_Self-Check/Lab_3_Self-Check.srcs/sources_1/new/question2.vhd
+
+HDL Line: C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/Lab_3_Self-Check/Lab_3_Self-Check.srcs/sources_1/new/question2.vhd:21

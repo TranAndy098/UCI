@@ -1,0 +1,12 @@
+showmain -1
+write 128 128
+read -1
+showmain 5
+showptable
+
+invalid
+
+shomain -1
+      
+shawty
+quit

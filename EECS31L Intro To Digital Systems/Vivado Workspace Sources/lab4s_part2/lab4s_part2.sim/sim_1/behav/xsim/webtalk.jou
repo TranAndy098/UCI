@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Sat Jun 12 04:37:47 2021
+# Process ID: 22404
+# Current directory: D:/School/EECS31L/Vivado Workspace Sources/lab4s_part2/lab4s_part2.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/School/EECS31L/Vivado Workspace Sources/lab4s_part2/lab4s_part2.sim/sim_1/behav/xsim/xsim.dir/lab4s_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/School/EECS31L/Vivado Workspace Sources/lab4s_part2/lab4s_part2.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/School/EECS31L/Vivado Workspace Sources/lab4s_part2/lab4s_part2.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/School/EECS31L/Vivado -notrace

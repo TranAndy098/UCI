@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr  8 21:50:14 2021
+# Process ID: 14692
+# Current directory: C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1baaaaa
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9360 C:\Users\Andy\OneDrive\Desktop\Vivado Workspace\lab1baaaaa\lab1b.xpr
+# Log file: C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1baaaaa/vivado.log
+# Journal file: C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1baaaaa\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1baaaaa/lab1b.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1baaaaa/lab1b.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1baaaaa/lab1b.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab1b_tb_vhd' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1baaaaa/lab1b.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj lab1b_tb_vhd_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1baaaaa/lab1b.srcs/sources_1/imports/Downloads/lab1b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LFDetector_behav'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1baaaaa/lab1b.srcs/sources_1/imports/Downloads/lab1b_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab1b_tb_vhd'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1baaaaa/lab1b.sim/sim_1/behav/xsim'
+"xelab -wto 059f7f51ab5043afbebbfe1159f5a7d1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot lab1b_tb_vhd_behav xil_defaultlib.lab1b_tb_vhd -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 059f7f51ab5043afbebbfe1159f5a7d1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot lab1b_tb_vhd_behav xil_defaultlib.lab1b_tb_vhd -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavior of entity xil_defaultlib.LFDetector_behav [lfdetector_behav_default]
+Compiling architecture behavior of entity xil_defaultlib.lab1b_tb_vhd
+Built simulation snapshot lab1b_tb_vhd_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1baaaaa/lab1b.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab1b_tb_vhd_behav -key {Behavioral:sim_1:Functional:lab1b_tb_vhd} -tclbatch {lab1b_tb_vhd.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source lab1b_tb_vhd.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab1b_tb_vhd_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1207.457 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+create_project project_1 {C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1baaaaa/project_1} -part xc7k70tfbv676-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'.
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+add_files -norecurse {{C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1baaaaa/lab1b.srcs/sources_1/imports/Downloads/lab1b_tb.vhd} {C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/lab1baaaaa/lab1b.srcs/sources_1/imports/Downloads/lab1b.vhd}}
+import_files -force -norecurse
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/DRIVELOCK/project_2.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/project_2' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/DRIVELOCK/project_2.gen/sources_1', nor could it be found using path 'C:/Users/Andy/OneDrive/Desktop/Vivado Workspace/project_2/project_2.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  8 22:25:59 2021...
